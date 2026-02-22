@@ -1,4 +1,4 @@
-to copile .py files you can use pyhone/python3 filename.py
+to copile .py files you can use python/python3 filename.py
 
 in this repo we will have multiple models such as pytorch_linear_regression, binary_classification, multi_class_classification, computer_vision etc.
 
