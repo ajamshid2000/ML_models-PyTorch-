@@ -1,8 +1,5 @@
-to copile .py files you can use pyhone/python3 filename.py
 
-in this repo we will have multiple models such as pytorch_linear_regression, binary_classification, multi_class_classification, computer_vision etc.
-
-1. pytorch_linear_regression: the model will predict the y position of the dots making a straight line by input of its x coordinate, in this project we go throught:
+pytorch_linear_regression: the model will predict the y position of the dots making a straight line by input of its x coordinate, in this project we go throught:
 *creation of a range of x tensors, calculating the y coordinate using wx+b and spliting the data to training(80%) and testing(20%) data.
 *creating a plot function for visualization of our data.
 *creating a custom model and visualizing the initial model predictions.
