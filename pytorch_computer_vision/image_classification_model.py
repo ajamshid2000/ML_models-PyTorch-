@@ -135,3 +135,12 @@ print(f"end result of the model after trainng for {epochs} epochs in {total_trai
       f"model_loss: {test_loss}",
       f"model_acc: {test_acc}", sep = "\n")
 
+train_loss, train_acc = 0,0
+with torch.inference_mode():
+    for X, y in train_dataloader:
+        train_pred = model_0(X)
+        train_loss += loss_fn(train_pred, y)
+        train_acc += accuracy_fn(y, train_pred.argmax(dim = 1))
+    train_loss /= len(train_dataloader) # we go though this just to make it dynamic
+    train_acc /= len(train_dataloader)
+print(f"\nTrain loss: {train_loss:.5f}, Train acc: {train_acc:.2f}%\n")
